@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                console.log('*')
+                document.write(`*`)
+            }
+            document.write(`<br>`)
+        }
+        document.write(`<br>`)
+        for(let i=5;i>=1;i--){
+            for(let j=1;j<=i ;j++){
+                console.log('*')
+                document.write(`*`)
+            }
+            document.write(`<br>`)
+        }
+        document.write(`<br>`)
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=5 ;j++){
+                console.log('*')
+                document.write(`*`)
+            }
+            document.write(`<br>`)
+        }
+        document.write(`<br>`)
+        {
+        let string = "";
+        for(let i=1;i<=5;i++) {
+            for(let j=0;j<5-i;j++) {
+                string+=" ";
+            }
+            for(let k=0;k<i;k++) {
+                string+="*";
+            }
+            string+="<br>";
+        }
+        document.write(`<pre>${string}</pre>`);
+        document.write("<br>");
+    }
+
+    {
+        let string = "";
+        for(let i=0;i<5;i++) { 
+            for(let j=0;j<5;j++){
+                if(i===0 || i===4){
+                    string+="*";    
+                }
+                else {
+                    if(j===0 || j===4) {
+                        string+="*";
+                    }
+                    else {
+                        string+=" ";
+                    }
+                }
+            }
+            string+="\n";
+        }
+        document.write(`<pre>${string}</pre>`);
+    }
+    {
+        for(let i=5;i>=1;i--){
+            for(let j=1;j<=i;j++) {
+                document.write("*")
+            }
+            document.write("<br>");
+        }
+    }  
+    {
+        let string = "";
+        for(let i=0;i<=5;i++) { 
+            for(let j=0;j<i;j++){
+                if(i===0 || i===5){
+                    string+="*";
+                }
+                else {
+                    if(j===0 || j===i-1) {
+                        string+="*";
+                    }
+                    else {
+                        string+=" ";
+                    }
+                }
+            }
+            string+="\n";
+        }
+        document.write(`<pre>${string}</pre>`);
+    } 
+    {
+        let string="";
+        for(let i=1;i<=5;i++){
+            for(j=1;j<=5-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++) {
+                string+="*";
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`);
+    }
+    {
+        let string="";
+        for(let i=5;i>=1;i--){
+            for(j=1;j<=5-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++) {
+                string+="*";
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`);
+    }
+    {
+        let string="";
+        for (let i=1;i<=5;i++){
+            for (let j=1;j<=5-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++){
+                if(i===1 || i===5){
+                    string+="*";
+                }
+                else {
+                    if(k===1 || k===(2*i-1)) {
+                        string+="*";
+                    }
+                    else{
+                        string+=" ";
+                    }
+                }
+            }
+            string+="\n";
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string="";
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=5-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+="*";
+            }
+            string+="\n";
+        }
+        for(let i=4;i>=1;i--){
+            for(let j=0;j<=4-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+="*";
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string="";
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=5-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++){
+                if(k===1 || k==2*i-1){
+                    string+="*";
+                }
+                else{
+                    string+=" ";
+                }
+            }
+            string+="\n"
+        }
+        for(let i=4;i>=1;i--){
+            for(let j=0;j<=4-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++){
+                if(k===1 || k===2*i-1){
+                    string+="*"
+                }
+                else{
+                    string+=" "
+                }
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+
+    {
+        let string="";
+        for(let i=5;i>=1;i--){
+            for(j=1;j<=5-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++) {
+                string+="*";
+            }
+            string+="\n"
+        }
+        for(let i=2;i<=5;i++){
+            for(j=1;j<=5-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++) {
+                string+="*";
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`);
+    }
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
