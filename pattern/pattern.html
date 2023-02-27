@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        {
+        let string="";
+        for(let i =1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                string+="*";
+            }
+            string+="\n";
+        }
+        for (let i=4;i>=1;i--){
+            for(let j=1;j<=i;j++){
+                string+="*";
+            }
+            string+="\n";
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+         let string="";
+         let n=5;
+         for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=i;k++){
+                string+="*";
+            }
+            string+="\n"
+         }
+         for(let i=n-1;i>=1;i--){
+            for(let j=1;j<=n-i;j++){
+                string+=" "
+            }
+            for(let k=1;k<=i;k++){
+                string+="*"
+            }
+            string+="\n"
+         }
+         document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string=""
+        let n=5;
+        for (let i=1;i<=n;i++){
+            for(let j=1;j<=n;j++){
+                string+=String.fromCharCode(j+64)
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string = "";
+        let n =5
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=i;j++){
+                string+=String.fromCharCode(j+64)
+            }
+            string+='\n'
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string =""
+        let n=5
+        for(let i=n;i>=1;i--){
+            for (let j=1;j<=i;j++){
+                string+=String.fromCharCode(j+64)
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string="";
+        let n=5;
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                string+=" "
+            }
+            for(let k=1;k<=i;k++){
+                string+=String.fromCharCode(k+64)
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string="";
+        let n=5;
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=i;j++){
+                string+=String.fromCharCode(i+64);
+            }
+            string+="\n";
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string="";
+        let n=5 ,count=1;
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=i;j++){
+                string+=String.fromCharCode(count+64)
+                count++;
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string=""
+        let n=5
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=(n-i+1);j++){
+                string+=String.fromCharCode((n-j+1)+64);
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+
+    {
+        let string=""
+        let n=5
+        for(let i=1;i<=n;i++){
+            for(let j=0;j<(n-i+1);j++){
+                string+=String.fromCharCode((n-j-i)+65);
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+
+    {
+        let string=""
+        let n=5
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                string+=" ";
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+=String.fromCharCode(k+64)
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string=""
+        let count=1, n=5
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                string+=" "
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+=String.fromCharCode(count+64)
+                count++;
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string=""
+        let n=5
+        for(let i=n;i>=1;i--){
+            for(let j=1;j<=n-i;j++){
+                string+=" "
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+=String.fromCharCode(k+64)
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+
+    {
+        let string=""
+        let n=5
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                string+=" "
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+=String.fromCharCode(k+64)
+            }
+            string+="\n"
+        }
+        for(let i=n-1;i>=1;i--){
+            for(let j=1;j<=n-i;j++){
+                string+=" "
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+=String.fromCharCode(k+64)
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    {
+        let string=""
+        let n=5
+        for(let i=n;i>=1;i--){
+            for(let j=1;j<=n-i;j++){
+                string+=" "
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+=String.fromCharCode(k+64)
+            }
+            string+="\n"
+        }
+        for(let i=2;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                string+=" "
+            }
+            for(let k=1;k<=2*i-1;k++){
+                string+=String.fromCharCode(k+64)
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+
+    {
+        let string=""
+        let n=5
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=i;j++){
+                string+=String.fromCharCode(j+64)
+            }
+            string+="\n"
+        }
+        for(let i=n-1;i>=1;i--){
+            for(let j=1;j<=i;j++){
+                string+=String.fromCharCode(j+64)
+            }
+            string+="\n"
+        }
+        document.write(`<pre>${string}</pre>`)
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
